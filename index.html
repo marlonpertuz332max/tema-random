@@ -1,0 +1,77 @@
+<html lang="es">
+<section id="flora" class="section alt">
+<div class="container">
+<h3>Flora destacada</h3>
+<div class="grid">
+<article class="card">
+<h4>Árbol de cristal</h4>
+<p>Un árbol legendario cuyas hojas brillan al anochecer.</p>
+</article>
+<article class="card">
+<h4>Helecho lunar</h4>
+<p>Crece en claros húmedos y refleja la luz de la luna.</p>
+</article>
+<article class="card">
+<h4>Flor de susurro</h4>
+<p>Su néctar atrae a pequeñas criaturas músicos.</p>
+</article>
+</div>
+</div>
+</section>
+
+
+<section id="fauna" class="section container">
+<h3>Fauna curiosa</h3>
+<ul class="fauna-list">
+<li>Luciole — luciérnagas gigantes</li>
+<li>Murmel — pequeños carnívoros amistosos</li>
+<li>Alavi — aves de colores cambiantes</li>
+</ul>
+</section>
+
+
+<section id="contact" class="section contact">
+<div class="container">
+<h3>Contacto</h3>
+<form class="contact-form" action="#" onsubmit="alert('Gracias por explorar el Bosque Encantado!') ; return false;">
+<label>
+Nombre
+<input type="text" name="name" placeholder="Tu nombre">
+</label>
+<label>
+Mensaje
+<textarea name="message" rows="4" placeholder="Escribe algo..."></textarea>
+</label>
+<div class="form-row">
+<button class="btn" type="submit">Enviar</button>
+<button class="btn ghost" type="reset">Limpiar</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© 2025 Bosque Encantado — Demo para GitHub Pages</p>
+<p class="small">Hecho con ❤️ y CSS limpio.</p>
+</div>
+</footer>
+
+
+<!-- Pequeña mejora interactiva sin dependencias -->
+<script>
+// Efecto de parallax simple en hero
+const hero = document.querySelector('.hero');
+if (hero) {
+window.addEventListener('mousemove', e => {
+const x = (e.clientX / window.innerWidth - 0.5) * 10;
+const y = (e.clientY / window.innerHeight - 0.5) * 6;
+hero.style.setProperty('--mx', x + 'deg');
+hero.style.setProperty('--my', y + 'px');
+});
+}
+</script>
+</body>
+</html>
